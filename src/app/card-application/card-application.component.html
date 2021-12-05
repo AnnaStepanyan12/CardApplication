@@ -1,0 +1,24 @@
+<div class="app">
+  <header>
+    <button (click)="addCard()"> <span>Add Card </span></button>
+    <button (click)="sortCard()"> <span>Sort Cards</span></button>
+  </header>
+  <div class="secondPart">
+      <main>
+        <div class="box" *ngFor="let card of cards">
+          <div class="delete">
+            <button (click)="delete(card)"><span>X</span></button>
+          </div>
+          <div class="number">
+            <span>{{card.number}}</span>
+          </div>
+        </div>
+  </main>
+  <div class="instructions">
+    <span>Instructions</span>
+  </div>
+  </div>
+  <footer>
+
+  </footer>
+</div>
